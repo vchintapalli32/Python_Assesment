@@ -1,0 +1,7 @@
+from typing import List, Dict
+def sum_top_scorers(data: List[Dict[str, int]], subject: str, threshold: int) -> int:
+    output = 0
+    for student_data in data:
+        if subject in student_data and student_data[subject] >= threshold:
+            output += student_data[subject]
+    return output
