@@ -1,0 +1,15 @@
+def extract_digits(s: str) -> list[int]:
+    extracted_nums = []
+    for char in s:
+        if char.isdigit():
+            extracted_nums.append(int(char))
+    return extracted_nums
+
+# Testcases
+
+print(extract_digits("abc123xyz"))
+print(extract_digits("no digits here!"))
+print(extract_digits("a1b2c3d4"))
+print(extract_digits("007bond"))
+
+print(extract_digits(""))
