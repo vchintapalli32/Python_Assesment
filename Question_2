@@ -1,0 +1,13 @@
+def sum_even_numbers(n: int) -> int:
+    if n < 2:
+        return 0
+    sum_even = 0
+    for i in range(2, n + 1, 2):
+        sum_even += i
+    return sum_even
+print(sum_even_numbers(10))
+print(sum_even_numbers(5))
+print(sum_even_numbers(1))
+
+
+print(sum_even_numbers(-1))
