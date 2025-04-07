@@ -1,0 +1,13 @@
+def word_count(sentence: str) -> dict:
+    frequency = {}
+    
+    words = sentence.split()
+    for word in words:
+        if word in frequency:
+            frequency[word] += 1
+        else:
+            frequency[word] = 1
+    
+    return frequency
+print(word_count('AI is the future and ai is powerful'))
+print(word_count('Hello hello HELLO'))
